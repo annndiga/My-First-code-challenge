@@ -1,3 +1,4 @@
+
 ## project Title
    # speed Detector
 
@@ -12,7 +13,7 @@ The Conditions used are as follows ;
 
 //declares a constant variable 'speedLimit'
 
- const speedLimit = 70;  
+ const speedLimit = 70;
 
  //declares a constant variable "pointsPerDemerit'
 
@@ -52,6 +53,4 @@ The Conditions used are as follows ;
 
 //Thankyou for reading through!!!
 
-const speed = "100";
-const result = calculateDemeritPoints(speed);
-console.log(result);
+

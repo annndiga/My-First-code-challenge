@@ -1,3 +1,4 @@
+
 //Program that takes input as the speed of a car.
 
 //Declare the input value 
@@ -29,10 +30,4 @@ function calculateDemeritPoints(speed) {
            
 
     }
-
-}
-
-//Output
-const speed = "100";
-const result = calculateDemeritPoints(speed);
-console.log(result);
+  }
