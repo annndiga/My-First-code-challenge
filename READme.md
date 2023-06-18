@@ -54,22 +54,54 @@ let nhif = 0;
 
 // determine the NHIF deduction based on different gross salary ranges
 
+ if (grossSalary <= 5999) {
+    nhif = 150;
+  }
+
+- The calculated NHIF deduction is returned using the return statement.
+
+
+Explanation for calculating net salary;
+
+   /* function calculateNetSalary(basicSalary, benefits) { ... }: This is the function definition for calculating the net salary. It takes two values, basicSalary and benefits.
+   */
+
+   1)  const ....
+
+    const grossSalary = basicSalary + benefits; {
+  const payeeTax = calculatePayeeTax(grossSalary);
+  const nhif = calculateNHIF(grossSalary);
+  const nssf = calculateNSSF(grossSalary);
+
+  const deductions = payeeTax + nhif + nssf;
+  const netSalary = grossSalary - deductions;
+
+  return netSalary;
+}
+
+const basicSalary = 40000;
+const benefits = 600000;
+
+const netSalary = calculateNetSalary(basicSalary, benefits);
 
 
 
+   2) console.log();
+
+//It logs the net salary value to the console, along with a descriptive message.
+
+    console.log("Net Salary:", netSalary);
 
 
 
+In my case  my Net salary was : 423498.55 .
+
+/home/ann/.nvm/versions/node/v20.2.0/bin/node ./index.js
+Net Salary: 423498.55000000005
 
 
 
-
-
-
-
-
-
-
+Thankyou for reading through!!!.
 
 
 
